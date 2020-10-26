@@ -1,0 +1,269 @@
+@font-face {
+    font-family: North;
+    src: url(/Fonts/North\ Avellion.otf);
+}
+@font-face {
+    font-family: Rankings;
+    src: url(/Fonts/Rankings\ Caps.otf);
+}
+#backgroundColor {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 150%;
+    margin: 0;
+
+
+}
+.defaultbg {
+    transition: 0.5s;
+    background-color: #D2DCE1;
+}
+.yel {
+    transition: 0.5s;
+    background-color: #e0dfbe;
+}
+#backgroundGrid {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#topGrid {
+    grid-area: 1 / 1 / 2 / 2;
+
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#logo {
+    grid-area: 1 / 1 / 2 / 2;
+
+    width: 120px;
+    height: 120px;
+
+    margin: auto;
+
+    animation-name: bounce-6;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+#ellipse {
+    grid-area: 1 / 3 / 2 / 4;
+
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+    animation-name: bounce-6;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 500ms;
+}
+.ellipseStart {
+    transform: translateY(-100px);
+}
+.ellipseDelay {
+    transform: translateY(0px);
+}
+@keyframes bounce-6 {
+    0%   { transform: scale(1,1)      translateY(-100px); }
+    10%  { transform: scale(1.1,.9)   translateY(-100px); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+@keyframes bounceUp{
+    0%   { transform: scale(1,1)      translateY(100px); filter: opacity(0);}
+    10%  { transform: scale(1.1,.9)   translateY(100px); filter: opacity(0);}
+    30%  { transform: scale(.9,1.1)   translateY(100px); filter: opacity(0);}
+    50%  { transform: scale(1.05,.95) translateY(0); filter: opacity(1);}
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+#middleGrid {
+    grid-area: 2 / 1 / 3 / 2;
+
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-rows: 1fr 5fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    transform: translateY(0);
+    filter: opacity(1);
+}
+#adventures {
+    grid-area: 2 / 2 / 3 / 3;
+
+    margin: auto;
+    margin-bottom: 70px;
+
+    font-family: Rankings;
+    font-size: 120px;
+
+    color: white;
+    background-image: url(/imgs/pexels-jaymantri-4827.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    animation: filling 3s ease forwards, fadeIn ease 3s;
+}
+@keyframes filling {
+    from{
+      background-position: center 50%;
+    }
+    to {
+      background-position: center 5%;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+#isaactsai {
+    grid-area: 2 / 2 / 3 / 3;
+
+    margin: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+
+    font-family: North;
+    font-size: 120px;
+
+    color:#3F5C67;
+
+    letter-spacing: .05em;
+
+    white-space: nowrap;
+
+    transform: translateY(0px);
+
+}
+.isaactsaiType {
+    animation: 
+    typing 2s steps(40, end),
+    fadeIn ease 3s;
+    border-right: .15em solid rgb(82, 82, 82); /* The typwriter cursor */
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width:  660px}
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(92, 92, 92); }
+  }
+#divideMiddleBottom {
+    grid-area: 2 / 2 / 3 / 3;
+    margin: auto;
+    margin-bottom: 10px;
+
+    height: 2px;
+    background-color: gray;
+    
+    transition: 1s ease-in-out;
+}
+.divideShow {
+    transition: 2s;
+    width: 28vw;
+}
+.divideHide {
+    width: 0vw;
+}
+#graphicDesigner {
+    grid-area: 3 / 2 / 4 / 3; 
+    margin: auto;
+    margin-top: 10px;
+
+    font-family: Rankings;
+    font-size: 30px;
+
+    color: #898989;
+
+    animation-name: bounceUp;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+#and {
+    grid-area: 3 / 2 / 4 / 3; 
+    margin: auto;
+    margin-top: 60px;
+
+    font-family: Rankings;
+    font-size: 30px;
+
+    color: #B9B9B9;
+
+    animation-name: bounceUp;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
+}
+#webDeveloper {
+    grid-area: 3 / 2 / 4 / 3; 
+    margin: auto;
+    margin-bottom: -30px;
+
+    font-family: Rankings;
+    font-size: 30px;
+    
+    color: #898989;
+
+    animation-name: bounceUp;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+.universalHide {
+    filter: opacity(0);
+}
+.universalShow {
+    filter: opacity(1);
+}
+#bottomGrid {
+    grid-area: 3 / 1 / 4 / 2;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#bottomMiddleGrid {
+    grid-area: 1 / 2 / 2 / 3;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10px 50px 20px 50px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
