@@ -4,37 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="scroll.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">    <link rel="icon" href="/imgs/IT Logo Darker-02.png" id="light-scheme-icon">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <title>Isaac Tsai</title>
 </head>
 <body onload="start()">
 
+    
     <div id="backgroundColor"></div>
+
 
     <div id="backgroundGrid">
 
         <p id="ww"></p>
 
-        <div id="topGrid">
-            <img id="logo" src="/imgs/IT Logo Darker-02.png" />
-            <img id="ellipse" class="ellipseStart" src="/imgs/ellipse.png" />
+        <div id="adventures">
+            I S A A C<br>
+            T S A I
+
+            <hr id="lineOne">
+            <hr id="lineTwo">
         </div>
 
-        <div id="middleGrid">
-            <div id="adventures">adventurous</div>
-            <div id="isaactsai"></div>
+        <div id="portfolioSubTitle">Portfolio</div>
+            
+        <div id="portfolioExplain">
+            <p>This is a personal page documenting the 
+                work I've done in web development, creative arts, woodworking,
+                film, and more. Scroll down to see my latest projects, plans,
+                and more.
+            </p> 
+            As of now, this website is the most up to date regarding my skill 
+            and experience.
 
-            <div class="divideHide" id="divideMiddleBottom"></div>
-
-            <div id="graphicDesigner" class="universalHide">graphic Designer</div>
-            <div id="and" class="universalHide">&</div>
-            <div id="webDeveloper" class="universalHide">web Developer</div>
         </div>
 
-        <div id="bottomGrid">
-            <div id="bottomMiddleGrid">
+            <div id="outlineRec">
+                <div id="lookingImg" ></div>
+            </div>
+    </div>
 
+    <div id="subscribe">
+        <div id="email"></div>
+        <button id="rightBox">yay!</button>
+    </div>
+
+
+    <div id="footerRec">        
+        <div id="copyright">Isaac Tsai 2020</div>
+    </div>
+
+    <div id="section2">
+
+        <h1 id="freshWeather">Fresh Weather</h1>
+
+        <img id="plainFresh" src="/imgs/MinFreshPlain.png"/>
+        <img id="patternFresh" src="/imgs/MinFreshWithPattern.png"/>
+
+        <h1 id="aboutFresh">About Fresh Weather
+            <p id="descFresh">Since my first web development debut 
+                this past april, Weather Clear and Fresh have merged
+                to create <b>Fresh Weather</b>, a bigger, better, and more 
+                efficient website.
+            </p>
+        </h1>
+
+        <div id="subscribeHeader"> Subscribe to Fresh
+            <div id="mc_embed_signup">
+                <form action="https://000webhostapp.us2.list-manage.com/subscribe/post?u=5e86f73b12f07575b41a53f4f&amp;id=e5027515e1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div>
+                    
+                        <div class="mc-field-group">
+                            <input type="email" value="" placeholder="Your Email" name="EMAIL" class="required email" id="mce-EMAIL">
+                            <input type="submit" value="Join!" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e86f73b12f07575b41a53f4f_e5027515e1" tabindex="-1" value=""></div>
+                        <div class="clear"></div>
+                    </div>
+                </form>
             </div>
         </div>
+
 
     </div>
 
@@ -45,5 +98,7 @@
 </body>
 <script src="main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
 <script src="/scroll.js"></script>
 </html>
