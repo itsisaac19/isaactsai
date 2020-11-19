@@ -33,3 +33,6 @@ function start () {
 
 }
 
+function freshWebsite() {
+  window.location = "https://freshweather.co"
+}
